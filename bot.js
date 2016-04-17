@@ -21,8 +21,7 @@ function respond() {
 function postMessage() {
   var botResponse, options, body, botReq;
 
-  //botResponse = "https://pbs.twimg.com/profile_images/500360904987656193/Hv23DCTk_400x400.jpeg";
-  botResponse = "butts";
+  botResponse = "https://pbs.twimg.com/profile_images/500360904987656193/Hv23DCTk_400x400.jpeg";
 
   options = {
     hostname: 'api.groupme.com',
