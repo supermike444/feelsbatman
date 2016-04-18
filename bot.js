@@ -21,7 +21,31 @@ function respond() {
 function postMessage() {
   var botResponse, options, body, botReq;
 
-  botResponse = "https://pbs.twimg.com/profile_images/500360904987656193/Hv23DCTk_400x400.jpeg";
+  var randomnum = Math.floor((Math.random() * 20) + 1);
+  if (randomnum > 16)
+    {
+        botResponse = "https://pbs.twimg.com/profile_images/500360904987656193/Hv23DCTk_400x400.jpeg";
+    }
+    else if (randomnum > 12)
+    {
+      botResponse = "https://media1.giphy.com/media/Sid4QgwDxJ8l2/200_s.gif"
+    }
+    else if (randomnum > 8)
+    {
+      botResponse = "https://media0.giphy.com/media/rR29jBsTB3lZe/200_s.gif"
+    }
+    else if (randomnum > 4)
+    {
+      botResponse = "https://media.giphy.com/media/m3SYKzhmod1IY/giphy.gif"
+    }
+    else if (randomnum > 1)
+    {
+      botResponse = "http://o.aolcdn.com/hss/storage/midas/a6378bd2a0d0f08566998f5c758a1c9b/200119323/Batman+cartoon.jpg"
+    }
+    else
+    {
+      botResponse = "https://lh3.googleusercontent.com/-wrtKyuFuGH8/VifauF9--7I/AAAAAAAAAF0/0yBwTZCpD60/w1000-h1000/Pepe_rare.png"
+    }
 
   options = {
     hostname: 'api.groupme.com',
