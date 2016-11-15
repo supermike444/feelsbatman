@@ -5,9 +5,9 @@ var botID = process.env.BOT_ID;
 
 function respond() {
   var request = JSON.parse(this.req.chunks[0]),
-      botRegex = /^\Feelsbatman$/;
+  var randomnum = Math.floor((Math.random() * 15) + 1);
 
-  if(request.text && botRegex.test(request.text)) {
+  if(randomnum > 14) {
     this.res.writeHead(200);
     postMessage();
     this.res.end();
@@ -21,31 +21,8 @@ function respond() {
 function postMessage() {
   var botResponse, options, body, botReq;
 
-  var randomnum = Math.floor((Math.random() * 20) + 1);
-  if (randomnum > 16)
-    {
-        botResponse = "https://pbs.twimg.com/profile_images/500360904987656193/Hv23DCTk_400x400.jpeg";
-    }
-    else if (randomnum > 12)
-    {
-      botResponse = "https://media1.giphy.com/media/Sid4QgwDxJ8l2/200_s.gif"
-    }
-    else if (randomnum > 8)
-    {
-      botResponse = "https://media0.giphy.com/media/rR29jBsTB3lZe/200_s.gif"
-    }
-    else if (randomnum > 4)
-    {
-      botResponse = "https://media.giphy.com/media/m3SYKzhmod1IY/giphy.gif"
-    }
-    else if (randomnum > 1)
-    {
-      botResponse = "http://o.aolcdn.com/hss/storage/midas/a6378bd2a0d0f08566998f5c758a1c9b/200119323/Batman+cartoon.jpg"
-    }
-    else
-    {
-      botResponse = "https://lh3.googleusercontent.com/-wrtKyuFuGH8/VifauF9--7I/AAAAAAAAAF0/0yBwTZCpD60/w1000-h1000/Pepe_rare.png"
-    }
+        botResponse = "http://i.imgur.com/sWxg0Tt.gif";
+
 
   options = {
     hostname: 'api.groupme.com',
