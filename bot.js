@@ -7,6 +7,8 @@ function respond() {
   var request = JSON.parse(this.req.chunks[0]),
   var randomnum = Math.floor((Math.random() * 15) + 1);
 
+  postMessage();
+  
   if(randomnum > 13) {
     this.res.writeHead(200);
     postMessage();
