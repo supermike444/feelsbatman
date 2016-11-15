@@ -4,12 +4,11 @@ var cool = require('cool-ascii-faces');
 var botID = process.env.BOT_ID;
 
 function respond() {
-  var request = JSON.parse(this.req.chunks[0]),
+  var request = JSON.parse(this.req.chunks[0]);
   var randomnum = Math.floor((Math.random() * 15) + 1);
 
-  postMessage();
   
-  if(randomnum > 13) {
+  if(randomnum > 14) {
     this.res.writeHead(200);
     postMessage();
     this.res.end();
