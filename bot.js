@@ -7,9 +7,20 @@ function respond() {
   var request = JSON.parse(this.req.chunks[0]);
   var regex = /^\dd\d$/;
 
+  if(request.name != "Math Lad") {
+    this.res.writeHead(200);
+    postMessage("Testerino");
+    this.res.end();
+  } else {
+    console.log("don't care");
+    this.res.writeHead(200);
+    this.res.end();
+  }
+  
+  
   if(request.text && regex.test(request.text)) {
     this.res.writeHead(200);
-    postMessage();
+    postMessage("Math");
     this.res.end();
   } else {
     console.log("don't care");
@@ -19,10 +30,10 @@ function respond() {
   */
 }
 
-function postMessage() {
+function postMessage(wew) {
   var botResponse, options, body, botReq;
 
-        botResponse = "math";
+        botResponse = wew;
 
 
   options = {
