@@ -36,9 +36,9 @@ function postMessage(wew) {
   var array = [];
   var wew = Number(split[0]);
   var lad = Number(split[2]);
-  for(i = 0; i < wew; i++) {
-  array.push(Math.floor(Math.random()*lad) + 1);
-  }
+//  for(i = 0; i < wew; i++) {
+//  array.push(Math.floor(Math.random()*lad) + 1);
+//  }
 //  var sum = array.reduce(add, 0);
 //  function add(a,b) {
 //  return a + b;
