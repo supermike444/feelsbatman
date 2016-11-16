@@ -30,10 +30,8 @@ function respond() {
 function postMessage(input) {
   var botResponse, options, body, botReq;
   
-  var split = input.split("");
+  var split = input.split(""); /*
   var multiple = Number(split[0])*Number(split[2]);
-  
-  /*
   var i;
   var array = [];
   var jew = Number(split[0]);
