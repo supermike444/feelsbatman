@@ -30,12 +30,12 @@ function respond() {
 function postMessage(input) {
   var botResponse, options, body, botReq;
   
-  var split = input.split(""); /*
-  var multiple = Number(split[0])*Number(split[2]);
+  var res = input.split(""); /*
+  var multiple = Number(res[0])*Number(res[2]);
   var i;
   var array = [];
-  var jew = Number(split[0]);
-  var lad = Number(split[2]);
+  var jew = Number(res[0]);
+  var lad = Number(res[2]);
   for(i = 0; i < jew; i++) {
   array.push(Math.floor(Math.random()*lad) + 1);
   }
