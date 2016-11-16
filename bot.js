@@ -11,7 +11,7 @@ function respond() {
   
 
   if(request.name != "Math Lad") {
-    postMessage("Testerino");
+    postMessage("1d1");
   }
 
   
