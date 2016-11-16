@@ -30,7 +30,7 @@ function respond() {
 function postMessage(wew) {
   var botResponse, options, body, botReq;
 
-  var split = request.split("");
+//  var split = request.split("");
 //  var multiple = Number(split[0])*Number(split[2]);
 //  var i;
 //  var array = [];
