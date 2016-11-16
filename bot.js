@@ -8,14 +8,9 @@ function respond() {
   var regex = /^\dd\d$/;
 
   if(request.name != "Math Lad") {
-    this.res.writeHead(200);
     postMessage("Testerino");
-    this.res.end();
-  } else {
-    console.log("don't care");
-    this.res.writeHead(200);
-    this.res.end();
   }
+
   
   
   if(request.text && regex.test(request.text)) {
