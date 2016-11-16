@@ -6,10 +6,8 @@ var botID = process.env.BOT_ID;
 function respond() {
   var request = JSON.parse(this.req.chunks[0]);
   var regex = /^\dd\d$/;
-  
-  postMessage();
-  /*
-  if(true) {
+
+  if(request.text && regex.test(request.text)) {
     this.res.writeHead(200);
     postMessage();
     this.res.end();
