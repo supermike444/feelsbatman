@@ -31,11 +31,11 @@ function postMessage(wew) {
   var botResponse, options, body, botReq;
 
   var split = request.split("");
-  var multiple = Number(split[0])*Number(split[2]);
-  var i;
-  var array = [];
-  var wew = Number(split[0]);
-  var lad = Number(split[2]);
+//  var multiple = Number(split[0])*Number(split[2]);
+//  var i;
+//  var array = [];
+//  var wew = Number(split[0]);
+//  var lad = Number(split[2]);
 //  for(i = 0; i < wew; i++) {
 //  array.push(Math.floor(Math.random()*lad) + 1);
 //  }
