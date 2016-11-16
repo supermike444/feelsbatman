@@ -30,6 +30,8 @@ function respond() {
 function postMessage(input) {
   var botResponse, options, body, botReq;
 
+  /*
+  
   var split = input.split("");
   var multiple = Number(split[0])*Number(split[2]);
   var i;
@@ -39,11 +41,11 @@ function postMessage(input) {
   for(i = 0; i < jew; i++) {
   array.push(Math.floor(Math.random()*lad) + 1);
   }
-//  var sum = array.reduce(add, 0);
-//  function add(a,b) {
-//  return a + b;
-//  }
-  
+  var sum = array.reduce(add, 0);
+  function add(a,b) {
+  return a + b;
+  }
+  */
   botResponse = wew;
 
 
