@@ -39,10 +39,10 @@ function postMessage(wew) {
   for(i = 0; i < wew; i++) {
   array.push(Math.floor(Math.random()*lad) + 1);
   }
-  var sum = array.reduce(add, 0);
-  function add(a,b) {
-  return a + b;
-  }
+//  var sum = array.reduce(add, 0);
+//  function add(a,b) {
+//  return a + b;
+//  }
   
   botResponse = wew;
 
