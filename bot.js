@@ -46,7 +46,7 @@ function postMessage(input) {
   return a + b;
   }
   */
-  botResponse = wew;
+  botResponse = input;
 
 
   options = {
