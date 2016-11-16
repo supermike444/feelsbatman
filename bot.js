@@ -10,9 +10,9 @@ function respond() {
   
   
 
-//  if(request.name != "Math Lad") {
-//    postMessage("Testerino");
-//  }
+  if(request.name != "Math Lad") {
+    postMessage("Testerino");
+  }
 
   
   
