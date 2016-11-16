@@ -7,6 +7,8 @@ function respond() {
   var request = JSON.parse(this.req.chunks[0]);
   var regex = /^\d(?=d)$/;
   
+  postMessage();
+  /*
   if(true) {
     this.res.writeHead(200);
     postMessage();
@@ -16,6 +18,7 @@ function respond() {
     this.res.writeHead(200);
     this.res.end();
   }
+  */
 }
 
 function postMessage() {
