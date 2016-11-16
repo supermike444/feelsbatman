@@ -27,10 +27,10 @@ function respond() {
   }
 }
 
-function postMessage(input) {
+function postMessage() {
   var botResponse, options, body, botReq;
-  /*
-  var res = input.split(""); 
+
+  var res = input.split(""); /*
   var multiple = Number(res[0])*Number(res[2]);
   var i;
   var array = [];
