@@ -27,15 +27,15 @@ function respond() {
   }
 }
 
-function postMessage() {
+function postMessage(madlads) {
   var botResponse, options, body, botReq;
 
-  var res = input.split(""); /*
-  var multiple = Number(res[0])*Number(res[2]);
+  var madlads = input.split(""); /*
+  var multiple = Number(madlads[0])*Number(madlads[2]);
   var i;
   var array = [];
-  var jew = Number(res[0]);
-  var lad = Number(res[2]);
+  var jew = Number(madlads[0]);
+  var lad = Number(madlads[2]);
   for(i = 0; i < jew; i++) {
   array.push(Math.floor(Math.random()*lad) + 1);
   }
