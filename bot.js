@@ -29,8 +29,8 @@ function respond() {
 
 function postMessage(input) {
   var botResponse, options, body, botReq;
-  
-  var res = input.split(""); /*
+  /*
+  var res = input.split(""); 
   var multiple = Number(res[0])*Number(res[2]);
   var i;
   var array = [];
