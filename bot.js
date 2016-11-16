@@ -27,7 +27,7 @@ function respond() {
   }
 }
 
-function postMessage(madlads) {
+function postMessage(input) {
   var botResponse, options, body, botReq;
 
   var madlads = input.split(""); /*
