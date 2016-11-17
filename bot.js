@@ -14,11 +14,11 @@ function respond() {
     postMessage("1d1");
   }
 
-  
+  var doot = request.split("");
   
   if(request.text && regex.test(request.text)) {
     this.res.writeHead(200);
-    postMessage(request);
+    postMessage(doot);
     this.res.end();
   } else {
     console.log("don't care");
@@ -29,8 +29,8 @@ function respond() {
 
 function postMessage(input) {
   var botResponse, options, body, botReq;
-
-  var madlads = input.split(""); /*
+/*
+  var madlads = input.split(""); 
   var multiple = Number(madlads[0])*Number(madlads[2]);
   var i;
   var array = [];
