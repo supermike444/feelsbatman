@@ -14,7 +14,8 @@ function respond() {
     postMessage("1d1");
   }
 
-  var doot = request.split("");
+  //var doot = request.split("");
+  var doot = request;
   
   if(request.text && regex.test(request.text)) {
     this.res.writeHead(200);
