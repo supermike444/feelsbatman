@@ -3,13 +3,14 @@ var cool = require('cool-ascii-faces');
 
 var botID = process.env.BOT_ID;
 
-if(request.name != "Chad") {
+
 function respond() {
   var request = JSON.parse(this.req.chunks[0]);
   var MarathonRegex = /Marathon/;
   var gasRegex = /gas/;
   var randomnum = Math.floor((Math.random() * 100) + 1);
   
+  if(request.name != "Chad") {
   if(request.text && MarathonRegex.test(request.text)) {
     this.res.writeHead(200);
     postMessage("I work for Marathon");
