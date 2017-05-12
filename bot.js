@@ -5,21 +5,23 @@ var botID = process.env.BOT_ID;
 
 function respond() {
   var request = JSON.parse(this.req.chunks[0]);
-  var regex = /2d2/;
+  var MarathonRegex = /Marathon/;
+  var gasRegex = /gas/;
+  var randomnum = Math.floor((Math.random() * 100) + 1);
   
-  
-  
-
-  if(request.name != "Math Lad") {
-    postMessage("1d1");
-  }
-
-  //var doot = request.split("");
-  var doot = request;
-  
-  if(request.text && regex.test(request.text)) {
+  if(request.text && MarathonRegex.test(request.text)) {
     this.res.writeHead(200);
-    postMessage(doot);
+    postMessage("I work for Marathon");
+    this.res.end();
+  }
+  else if(request.text && gasRegex.test(request.text)) {
+    this.res.writeHead(200);
+    postMessage("Did someone say gas? Because I work for Marathon");
+    this.res.end();
+  }
+  else if(request.text && randomnum > 99) {
+    this.res.writeHead(200);
+    postMessage("We should talk about how I work at Marathon");
     this.res.end();
   } else {
     console.log("don't care");
@@ -30,21 +32,7 @@ function respond() {
 
 function postMessage(input) {
   var botResponse, options, body, botReq;
-/*
-  var madlads = input.split(""); 
-  var multiple = Number(madlads[0])*Number(madlads[2]);
-  var i;
-  var array = [];
-  var jew = Number(madlads[0]);
-  var lad = Number(madlads[2]);
-  for(i = 0; i < jew; i++) {
-  array.push(Math.floor(Math.random()*lad) + 1);
-  }
-  var sum = array.reduce(add, 0);
-  function add(a,b) {
-  return a + b;
-  }
-  */
+
   botResponse = input;
 
 
