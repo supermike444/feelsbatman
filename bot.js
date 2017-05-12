@@ -3,6 +3,7 @@ var cool = require('cool-ascii-faces');
 
 var botID = process.env.BOT_ID;
 
+if(request.name != "Chad") (
 function respond() {
   var request = JSON.parse(this.req.chunks[0]);
   var MarathonRegex = /Marathon/;
@@ -29,6 +30,7 @@ function respond() {
     this.res.end();
   }
 }
+  )
 
 function postMessage(input) {
   var botResponse, options, body, botReq;
