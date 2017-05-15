@@ -7,6 +7,7 @@ var botID = process.env.BOT_ID;
 function respond() {
   var request = JSON.parse(this.req.chunks[0]);
   var MarathonRegex = /Marathon/;
+  var marathonRegex = /marathon/;
   var gasRegex = /gas/;
   var randomnum = Math.floor((Math.random() * 100) + 1);
   
@@ -14,6 +15,11 @@ function respond() {
   if(request.text && MarathonRegex.test(request.text)) {
     this.res.writeHead(200);
     postMessage("I work for Marathon");
+    this.res.end();
+  }
+    else if(request.text && marathonRegex.test(request.text)) {
+    this.res.writeHead(200);
+    postMessage("Just thought I'd let you guys know I work for Marathon");
     this.res.end();
   }
   else if(request.text && gasRegex.test(request.text)) {
